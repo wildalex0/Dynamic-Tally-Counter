@@ -169,7 +169,7 @@
             MinimumSize = new Size(266, 489);
             Name = "CreateTally";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "CreateTally";
+            Text = "Create Tally";
             ResumeLayout(false);
             PerformLayout();
         }

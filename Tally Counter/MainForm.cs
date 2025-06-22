@@ -51,6 +51,8 @@ namespace Tally_Counter
                 {
                     CreateTallyControl(tally);
                 }
+                Messenger.MessageBox("Data Loaded Successfully", "Save Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
             }
             else
             {
@@ -93,8 +95,10 @@ namespace Tally_Counter
             {
                 //Until implementation of settings screen, it will use a hardcoded file.
                 String jsonString = JsonSerializer.Serialize(tallyList);
-                string directoryPath = Path.GetFullPath("./Cached Saves");
-                string filePath = Path.Combine(directoryPath, "savedData.json");
+                jsonString = System.Text.Json.Nodes.JsonNode.Parse(jsonString).ToString();
+
+                string directoryPath = Path.GetFullPath(dataSavePath);
+                string filePath = Path.Combine(directoryPath, dataFileName);
                 if (!Directory.Exists(directoryPath))
                 {
                     Directory.CreateDirectory(directoryPath);
@@ -157,7 +161,7 @@ namespace Tally_Counter
 
         private void settingsToolButton_Click(object sender, EventArgs e)
         {
-            using (var Settings = new Settings()) {
+            using (var Settings = new Settings(dataFileName, dataSavePath)) {
                 Settings.SettingsChanged += Settings_SettingsChanged;
                 Settings.ShowDialog();
             }

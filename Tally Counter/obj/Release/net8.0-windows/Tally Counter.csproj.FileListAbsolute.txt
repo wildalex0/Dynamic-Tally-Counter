@@ -1,0 +1,20 @@
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\bin\Release\net8.0-windows\Tally Counter.exe
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\bin\Release\net8.0-windows\Tally Counter.deps.json
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\bin\Release\net8.0-windows\Tally Counter.runtimeconfig.json
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\bin\Release\net8.0-windows\Tally Counter.dll
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\bin\Release\net8.0-windows\Tally Counter.pdb
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Release\net8.0-windows\Tally_Counter.CreateTally.resources
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Release\net8.0-windows\Tally_Counter.MainForm.resources
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Release\net8.0-windows\Tally_Counter.Settings.resources
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Release\net8.0-windows\Tally_Counter.TallyControl.resources
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Release\net8.0-windows\Tally Counter.csproj.GenerateResource.cache
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Release\net8.0-windows\Tally Counter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Release\net8.0-windows\Tally Counter.AssemblyInfoInputs.cache
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Release\net8.0-windows\Tally Counter.AssemblyInfo.cs
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Release\net8.0-windows\Tally Counter.csproj.CoreCompileInputs.cache
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Release\net8.0-windows\Tally Counter.sourcelink.json
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Release\net8.0-windows\Tally Counter.dll
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Release\net8.0-windows\refint\Tally Counter.dll
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Release\net8.0-windows\Tally Counter.pdb
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Release\net8.0-windows\Tally Counter.genruntimeconfig.cache
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Release\net8.0-windows\ref\Tally Counter.dll

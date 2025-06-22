@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Tally_Counter
@@ -15,7 +16,8 @@ namespace Tally_Counter
         public string Title { get; set; }
         public string Filename { get; set; }
         public string SaveExtension { get; set; }
-        
+
+        public Tally() { }
         public Tally(string Title = "Null", int Count = 0, string path= "C:/", string fileName= "Test", string fileExtention= ".md", int index = 0, bool isLoading = false)
         {
             this.Title = Title;
@@ -24,7 +26,7 @@ namespace Tally_Counter
             this.Filename = fileName;
             this.SaveExtension = fileExtention;
             this.Index = index;
-            if (!isLoading)
+            if (!isLoading && !string.IsNullOrEmpty(SavePath))
             {
                 saveTallyToFile();
             }

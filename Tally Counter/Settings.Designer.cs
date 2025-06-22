@@ -113,6 +113,8 @@
             Controls.Add(selectFolderButton);
             Controls.Add(filePathInput);
             Controls.Add(label3);
+            MaximumSize = new Size(268, 489);
+            MinimumSize = new Size(268, 489);
             Name = "Settings";
             Text = "Settings";
             ResumeLayout(false);

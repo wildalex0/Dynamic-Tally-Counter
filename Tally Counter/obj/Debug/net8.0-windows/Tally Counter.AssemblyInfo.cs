@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tally Counter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5afd39bdbc8d12a6cf3e1b5d25ffa64ecd7d4a9f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8aaeccd6f5b098e05979d3b8cb2cbaee44167bbe")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tally Counter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tally Counter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

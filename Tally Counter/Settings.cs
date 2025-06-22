@@ -16,7 +16,7 @@ namespace Tally_Counter
         private DarkModeCS dm = null;
         public string DataPath => filePathInput.Text;
         public string Filename => filenameInput.Text;
-        public Settings()
+        public Settings(String currentFilename, String currentFilePath)
         {
             InitializeComponent();
             dm = new DarkModeCS(this)
@@ -24,6 +24,8 @@ namespace Tally_Counter
                 //[Optional] Choose your preferred color mode here:
                 ColorMode = DarkModeCS.DisplayMode.SystemDefault
             };
+            filePathInput.Text = currentFilePath;
+            filenameInput.Text = currentFilename;
         }
         public event EventHandler SettingsChanged;
 
@@ -35,13 +37,14 @@ namespace Tally_Counter
 
                 string[] lines = new string[]
                 {
-                String.Format("dataSavePath={0}",filePathInput.Text ),
-                String.Format("dataFileName=savedData.json", filenameInput.Text)
+                String.Format("dataSavePath={0}", DataPath ),
+                String.Format("dataFileName={0}", Filename)
                 };
 
                 File.WriteAllLines(configPath, lines);
                 //Tells the main page that the settings have been changed.
                 SettingsChanged?.Invoke(this, EventArgs.Empty);
+                Messenger.MessageBox("Data Saved Successfully", "Save Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 
                 this.Close();
             }

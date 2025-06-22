@@ -25,10 +25,26 @@ namespace Tally_Counter
         public void updateValues()
         {
             tallyTitle.Text = tallyObj.Title;
-            tallyCount.Text = tallyObj.Count.ToString();
+            updateTallyCountText(tallyObj.Count.ToString());
             tallyPathLabel.Text = tallyObj.SavePath;
         }
 
+        public void updateTallyCountText(string newText)
+        {
+            tallyCount.Text = newText;
+
+            // Measure string width based on current font
+            using (Graphics g = CreateGraphics())
+            {
+                SizeF textSize = g.MeasureString(newText, tallyCount.Font);
+
+                tallyCount.Width = (int)Math.Ceiling(textSize.Width);
+                tallyCount.Height = (int)Math.Ceiling(textSize.Height);
+
+                // Center the label within the UserControl
+                tallyCount.Left = (this.Width - tallyCount.Width) / 2;
+            }
+        }
         public void ApplyScale(int targetWidth)
         {
             // Reference width you designed for (matches your `Size = new Size(210, 439);`)
