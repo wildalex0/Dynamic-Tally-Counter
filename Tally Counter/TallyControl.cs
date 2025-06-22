@@ -19,30 +19,33 @@ namespace Tally_Counter
         {
             InitializeComponent();
             this.tallyObj = tallyInp;
+            tallyTitle.AutoSize = true;
+            tallyTitle.TextAlign = ContentAlignment.MiddleCenter;
+            tallyTitle.MaximumSize = new Size(this.Width, 0);
             updateValues();
         }
 
         public void updateValues()
         {
-            tallyTitle.Text = tallyObj.Title;
-            updateTallyCountText(tallyObj.Count.ToString());
+            updateLabel(tallyObj.Title, tallyTitle);
+            updateLabel(tallyObj.Count.ToString(),tallyCount);
             tallyPathLabel.Text = tallyObj.SavePath;
         }
 
-        public void updateTallyCountText(string newText)
+        public void updateLabel(string newText, Label tc)
         {
-            tallyCount.Text = newText;
+            tc.Text = newText;
 
             // Measure string width based on current font
             using (Graphics g = CreateGraphics())
             {
-                SizeF textSize = g.MeasureString(newText, tallyCount.Font);
+                SizeF textSize = g.MeasureString(newText, tc.Font);
 
-                tallyCount.Width = (int)Math.Ceiling(textSize.Width);
-                tallyCount.Height = (int)Math.Ceiling(textSize.Height);
+                tc.Width = (int)Math.Ceiling(textSize.Width);
+                tc.Height = (int)Math.Ceiling(textSize.Height);
 
                 // Center the label within the UserControl
-                tallyCount.Left = (this.Width - tallyCount.Width) / 2;
+                tc.Left = (this.Width - tc.Width) / 2;
             }
         }
         public void ApplyScale(int targetWidth)

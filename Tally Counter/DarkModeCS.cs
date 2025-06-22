@@ -548,8 +548,8 @@ namespace Tally_Counter
                 button.FlatStyle = IsDarkMode ? FlatStyle.Flat : FlatStyle.Standard;
                 button.FlatAppearance.CheckedBackColor = OScolors.Accent;
                 button.BackColor = OScolors.Control;
-                button.FlatAppearance.BorderColor = (OwnerForm.AcceptButton == button) ?
-                  OScolors.Accent : OScolors.Control;
+                //button.FlatAppearance.BorderColor = (OwnerForm.AcceptButton == button) ?
+                //  OScolors.Accent : OScolors.Control;
             }
             if (control is ComboBox comboBox)
             {

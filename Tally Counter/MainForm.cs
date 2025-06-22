@@ -13,7 +13,7 @@ namespace Tally_Counter
         string configPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "config.ini");
         string dataSavePath = null;
         string dataFileName = null;
-
+        string latestSavedData = string.Empty;
         public MainForm()
         {
             InitializeComponent();
@@ -23,6 +23,7 @@ namespace Tally_Counter
                 ColorMode = DarkModeCS.DisplayMode.SystemDefault
             };
             updateConfig();
+            loadData(true);
         }
         private void CreateTallyControl(Tally tallyObj)
         {
@@ -36,31 +37,18 @@ namespace Tally_Counter
 
         private void loadDataBtn_Click(object sender, EventArgs e)
         {
-            string directoryPath = dataSavePath;
-            string filePath = Path.Combine(directoryPath, dataFileName);
-            if (File.Exists(filePath))
-            {
-                tallyList.Clear();
-                string jsonString = File.ReadAllText(filePath);
-                var deserializedList = JsonSerializer.Deserialize<List<Tally>>(jsonString);
-                if (deserializedList != null)
-                {
-                    tallyList = deserializedList;
-                }
-                foreach (Tally tally in tallyList)
-                {
-                    CreateTallyControl(tally);
-                }
-                Messenger.MessageBox("Data Loaded Successfully", "Save Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-
-            }
-            else
-            {
-                Messenger.MessageBox("No Data Found", "Missing Data Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
-            }
+            loadData();
         }
+        private void clearScreen(bool silent = false)
+        {
+            tallyList.Clear();
+            mainLayoutPanel.Controls.Clear();
+            if (!silent)
+            {
+                Messenger.MessageBox("Data Cleared Successfully", "Data Clearing Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
 
+        }
         private void updateConfig()
         {
 
@@ -88,15 +76,57 @@ namespace Tally_Counter
                 dataFileName = "savedData.json";
             }
         }
+        private void loadData(bool silent = false)
+        {
+            try
+            {
+                string directoryPath = dataSavePath;
+                string filePath = Path.Combine(directoryPath, dataFileName);
+                if (File.Exists(filePath))
+                {
+                    clearScreen(true);
+                    string jsonString = File.ReadAllText(filePath);
+                    var deserializedList = JsonSerializer.Deserialize<List<Tally>>(jsonString);
+                    if (deserializedList != null)
+                    {
+                        tallyList = deserializedList;
+                    }
+                    foreach (Tally tally in tallyList)
+                    {
+                        CreateTallyControl(tally);
+                    }
+                    if (!silent) {
+                        Messenger.MessageBox("Data Loaded Successfully", "Save Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                            }
 
-        private void saveDataButton_Click(object sended, EventArgs e)
+                }
+                else
+                {
+                    if (!silent)
+                    {
+                        Messenger.MessageBox("No Data Found", "Missing Data Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Messenger.MessageBox(string.Format("Something went wrong! {ex.message}", ex.Message), "Runtime Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+        private string getJsonString()
+        {
+            String jsonString = JsonSerializer.Serialize(tallyList);
+            jsonString = System.Text.Json.Nodes.JsonNode.Parse(jsonString).ToString();
+            return jsonString;
+        }
+        private void saveData()
         {
             try
             {
                 //Until implementation of settings screen, it will use a hardcoded file.
-                String jsonString = JsonSerializer.Serialize(tallyList);
-                jsonString = System.Text.Json.Nodes.JsonNode.Parse(jsonString).ToString();
-
+                String jsonString = getJsonString();
+                latestSavedData = jsonString;
                 string directoryPath = Path.GetFullPath(dataSavePath);
                 string filePath = Path.Combine(directoryPath, dataFileName);
                 if (!Directory.Exists(directoryPath))
@@ -110,6 +140,10 @@ namespace Tally_Counter
             {
                 Messenger.MessageBox(string.Format("Something went wrong! {ex.message}", ex.Message), "Runtime Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        private void saveDataButton_Click(object sended, EventArgs e)
+        {
+            saveData();
 
         }
         private void addToolButton_Click(object sender, EventArgs e)
@@ -158,14 +192,35 @@ namespace Tally_Counter
                 tallyList[i].Index = i;
             }
         }
-
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!String.Equals(getJsonString(), latestSavedData)){
+                if (Messenger.MessageBox("Are you sure you want to close?\nUnsaved data will be lost.", "Unsaved Data Popup", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
+            }
+        }
         private void settingsToolButton_Click(object sender, EventArgs e)
         {
-            using (var Settings = new Settings(dataFileName, dataSavePath)) {
+            using (var Settings = new Settings(dataFileName, dataSavePath))
+            {
                 Settings.SettingsChanged += Settings_SettingsChanged;
                 Settings.ShowDialog();
             }
         }
+
+        private void clearScreenToolButton_Click(object sender, EventArgs e)
+        {
+            clearScreen();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 
 }

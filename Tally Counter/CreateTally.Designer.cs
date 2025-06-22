@@ -128,6 +128,7 @@
             fileExtensionCombo.Name = "fileExtensionCombo";
             fileExtensionCombo.Size = new Size(226, 23);
             fileExtensionCombo.TabIndex = 9;
+            fileExtensionCombo.Text = ".md";
             // 
             // label5
             // 

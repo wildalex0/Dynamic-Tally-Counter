@@ -43,12 +43,14 @@
             // 
             // subOneButton
             // 
-            subOneButton.BackColor = SystemColors.ScrollBar;
+            subOneButton.BackColor = SystemColors.ButtonShadow;
+            subOneButton.FlatAppearance.BorderColor = SystemColors.Control;
             subOneButton.FlatStyle = FlatStyle.Flat;
             subOneButton.Font = new Font("Segoe UI", 17F, FontStyle.Bold);
-            subOneButton.Location = new Point(3, 150);
+            subOneButton.Location = new Point(3, 154);
+            subOneButton.Margin = new Padding(7, 3, 3, 3);
             subOneButton.Name = "subOneButton";
-            subOneButton.Size = new Size(98, 79);
+            subOneButton.Size = new Size(97, 79);
             subOneButton.TabIndex = 0;
             subOneButton.Text = "- 1";
             subOneButton.UseVisualStyleBackColor = false;
@@ -56,12 +58,14 @@
             // 
             // addOneButton
             // 
-            addOneButton.BackColor = SystemColors.ScrollBar;
+            addOneButton.BackColor = SystemColors.ButtonShadow;
+            addOneButton.FlatAppearance.BorderColor = SystemColors.Control;
             addOneButton.FlatStyle = FlatStyle.Flat;
             addOneButton.Font = new Font("Segoe UI", 17F, FontStyle.Bold);
-            addOneButton.Location = new Point(111, 150);
+            addOneButton.Location = new Point(106, 154);
+            addOneButton.Margin = new Padding(3, 3, 7, 3);
             addOneButton.Name = "addOneButton";
-            addOneButton.Size = new Size(98, 79);
+            addOneButton.Size = new Size(97, 79);
             addOneButton.TabIndex = 1;
             addOneButton.Text = "+ 1";
             addOneButton.UseVisualStyleBackColor = false;
@@ -69,12 +73,14 @@
             // 
             // subThreeButton
             // 
-            subThreeButton.BackColor = SystemColors.ScrollBar;
+            subThreeButton.BackColor = SystemColors.ButtonShadow;
+            subThreeButton.FlatAppearance.BorderColor = SystemColors.Control;
             subThreeButton.FlatStyle = FlatStyle.Flat;
             subThreeButton.Font = new Font("Segoe UI", 17F, FontStyle.Bold);
-            subThreeButton.Location = new Point(3, 235);
+            subThreeButton.Location = new Point(3, 239);
+            subThreeButton.Margin = new Padding(7, 3, 3, 3);
             subThreeButton.Name = "subThreeButton";
-            subThreeButton.Size = new Size(98, 39);
+            subThreeButton.Size = new Size(97, 39);
             subThreeButton.TabIndex = 2;
             subThreeButton.Text = "- 3";
             subThreeButton.UseVisualStyleBackColor = false;
@@ -82,12 +88,14 @@
             // 
             // addThreeButton
             // 
-            addThreeButton.BackColor = SystemColors.ScrollBar;
+            addThreeButton.BackColor = SystemColors.ButtonShadow;
+            addThreeButton.FlatAppearance.BorderColor = SystemColors.Control;
             addThreeButton.FlatStyle = FlatStyle.Flat;
             addThreeButton.Font = new Font("Segoe UI", 17F, FontStyle.Bold);
-            addThreeButton.Location = new Point(111, 235);
+            addThreeButton.Location = new Point(106, 239);
+            addThreeButton.Margin = new Padding(3, 3, 7, 3);
             addThreeButton.Name = "addThreeButton";
-            addThreeButton.Size = new Size(98, 39);
+            addThreeButton.Size = new Size(97, 39);
             addThreeButton.TabIndex = 3;
             addThreeButton.Text = "+ 3";
             addThreeButton.UseVisualStyleBackColor = false;
@@ -95,12 +103,14 @@
             // 
             // subFiveButton
             // 
-            subFiveButton.BackColor = SystemColors.ScrollBar;
+            subFiveButton.BackColor = SystemColors.ButtonShadow;
+            subFiveButton.FlatAppearance.BorderColor = SystemColors.Control;
             subFiveButton.FlatStyle = FlatStyle.Flat;
             subFiveButton.Font = new Font("Segoe UI", 17F, FontStyle.Bold);
-            subFiveButton.Location = new Point(3, 280);
+            subFiveButton.Location = new Point(3, 284);
+            subFiveButton.Margin = new Padding(7, 3, 3, 3);
             subFiveButton.Name = "subFiveButton";
-            subFiveButton.Size = new Size(98, 39);
+            subFiveButton.Size = new Size(97, 39);
             subFiveButton.TabIndex = 4;
             subFiveButton.Text = "- 5";
             subFiveButton.UseVisualStyleBackColor = false;
@@ -108,12 +118,14 @@
             // 
             // addFiveButton
             // 
-            addFiveButton.BackColor = SystemColors.ScrollBar;
+            addFiveButton.BackColor = SystemColors.ButtonShadow;
+            addFiveButton.FlatAppearance.BorderColor = SystemColors.Control;
             addFiveButton.FlatStyle = FlatStyle.Flat;
             addFiveButton.Font = new Font("Segoe UI", 17F, FontStyle.Bold);
-            addFiveButton.Location = new Point(111, 280);
+            addFiveButton.Location = new Point(106, 284);
+            addFiveButton.Margin = new Padding(3, 3, 7, 3);
             addFiveButton.Name = "addFiveButton";
-            addFiveButton.Size = new Size(98, 39);
+            addFiveButton.Size = new Size(97, 39);
             addFiveButton.TabIndex = 5;
             addFiveButton.Text = "+ 5";
             addFiveButton.UseVisualStyleBackColor = false;
@@ -123,9 +135,9 @@
             // 
             changeSaveButton.BackColor = SystemColors.ScrollBar;
             changeSaveButton.FlatStyle = FlatStyle.Flat;
-            changeSaveButton.Location = new Point(3, 383);
+            changeSaveButton.Location = new Point(3, 387);
             changeSaveButton.Name = "changeSaveButton";
-            changeSaveButton.Size = new Size(206, 39);
+            changeSaveButton.Size = new Size(200, 39);
             changeSaveButton.TabIndex = 6;
             changeSaveButton.Text = "Change Save Path";
             changeSaveButton.UseVisualStyleBackColor = false;
@@ -135,7 +147,7 @@
             // 
             tallyTitle.Anchor = AnchorStyles.Top;
             tallyTitle.Font = new Font("Segoe UI", 13F);
-            tallyTitle.Location = new Point(68, -1);
+            tallyTitle.Location = new Point(64, 9);
             tallyTitle.Name = "tallyTitle";
             tallyTitle.Size = new Size(76, 25);
             tallyTitle.TabIndex = 8;
@@ -146,7 +158,7 @@
             // 
             tallyCount.AutoSize = true;
             tallyCount.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
-            tallyCount.Location = new Point(87, 59);
+            tallyCount.Location = new Point(85, 62);
             tallyCount.Name = "tallyCount";
             tallyCount.Size = new Size(40, 46);
             tallyCount.TabIndex = 9;
@@ -157,9 +169,9 @@
             // 
             deleteCounterButton.BackColor = SystemColors.ScrollBar;
             deleteCounterButton.FlatStyle = FlatStyle.Flat;
-            deleteCounterButton.Location = new Point(3, 428);
+            deleteCounterButton.Location = new Point(3, 432);
             deleteCounterButton.Name = "deleteCounterButton";
-            deleteCounterButton.Size = new Size(206, 39);
+            deleteCounterButton.Size = new Size(200, 39);
             deleteCounterButton.TabIndex = 10;
             deleteCounterButton.Text = "Delete Counter";
             deleteCounterButton.UseVisualStyleBackColor = false;
@@ -167,11 +179,11 @@
             // 
             // tallyPathLabel
             // 
-            tallyPathLabel.Location = new Point(3, 354);
+            tallyPathLabel.Location = new Point(3, 358);
             tallyPathLabel.Name = "tallyPathLabel";
             tallyPathLabel.PlaceholderText = "filePath";
             tallyPathLabel.ReadOnly = true;
-            tallyPathLabel.Size = new Size(206, 23);
+            tallyPathLabel.Size = new Size(200, 23);
             tallyPathLabel.TabIndex = 11;
             // 
             // TallyControl
@@ -192,7 +204,8 @@
             Controls.Add(subOneButton);
             Margin = new Padding(10, 25, 10, 10);
             Name = "TallyControl";
-            Size = new Size(214, 477);
+            Padding = new Padding(10);
+            Size = new Size(207, 477);
             Load += TallyControl_Load;
             ResumeLayout(false);
             PerformLayout();

@@ -3,39 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|c:\\users\\115al\\documents\\github\\dynamic-tally-counter\\tally counter\\tallycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|solutionrelative:tallycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|c:\\users\\115al\\documents\\github\\dynamic-tally-counter\\tally counter\\tallycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|solutionrelative:tallycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|c:\\users\\115al\\documents\\github\\dynamic-tally-counter\\tally counter\\tally.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|solutionrelative:tally.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|c:\\users\\115al\\documents\\github\\dynamic-tally-counter\\tally counter\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\createtally.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|c:\\users\\115al\\documents\\github\\dynamic-tally-counter\\tally counter\\createtally.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|solutionrelative:createtally.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|c:\\users\\115al\\documents\\github\\dynamic-tally-counter\\tally counter\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|solutionrelative:settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|c:\\users\\115al\\documents\\github\\dynamic-tally-counter\\tally counter\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|solutionrelative:settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|c:\\users\\115al\\documents\\github\\dynamic-tally-counter\\tally counter\\messenger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|solutionrelative:messenger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|c:\\users\\115al\\documents\\github\\dynamic-tally-counter\\tally counter\\config,ini||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|solutionrelative:config,ini||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|c:\\users\\115al\\documents\\github\\dynamic-tally-counter\\tally counter\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -43,8 +23,8 @@
       "RelativeMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|solutionrelative:createtally.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|c:\\users\\115al\\documents\\github\\dynamic-tally-counter\\tally counter\\config,ini||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|solutionrelative:config,ini||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|c:\\users\\115al\\documents\\github\\dynamic-tally-counter\\tally counter\\tally.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09A0288E-93B5-4557-A452-FA5C818848F9}|Tally Counter.csproj|solutionrelative:tally.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,8 +34,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 171,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateTally.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\CreateTally.cs",
+              "RelativeDocumentMoniker": "CreateTally.cs",
+              "ToolTip": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\CreateTally.cs [Design]*",
+              "RelativeToolTip": "CreateTally.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T14:26:30.441Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
@@ -70,19 +62,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TallyControl.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\TallyControl.cs",
-              "RelativeDocumentMoniker": "TallyControl.cs",
-              "ToolTip": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\TallyControl.cs [Design]*",
-              "RelativeToolTip": "TallyControl.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T10:40:38.427Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Tally.cs",
               "DocumentMoniker": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\Tally.cs",
               "RelativeDocumentMoniker": "Tally.cs",
@@ -95,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
@@ -107,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "config,ini",
               "DocumentMoniker": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\config,ini",
               "RelativeDocumentMoniker": "config,ini",
@@ -120,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Settings.cs",
               "DocumentMoniker": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\Settings.cs",
               "RelativeDocumentMoniker": "Settings.cs",
@@ -133,79 +113,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "CreateTally.cs",
               "DocumentMoniker": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\CreateTally.cs",
               "RelativeDocumentMoniker": "CreateTally.cs",
-              "ToolTip": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\CreateTally.cs",
-              "RelativeToolTip": "CreateTally.cs",
+              "ToolTip": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\CreateTally.cs*",
+              "RelativeToolTip": "CreateTally.cs*",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-22T02:18:37.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Settings.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\Settings.Designer.cs",
-              "RelativeDocumentMoniker": "Settings.Designer.cs",
-              "ToolTip": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\Settings.Designer.cs",
-              "RelativeToolTip": "Settings.Designer.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAYwGUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T02:56:18.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateTally.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\CreateTally.cs",
-              "RelativeDocumentMoniker": "CreateTally.cs",
-              "ToolTip": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\CreateTally.cs [Design]",
-              "RelativeToolTip": "CreateTally.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T02:18:33.599Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\MainForm.cs",
-              "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\MainForm.cs",
-              "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAD0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T01:27:31.292Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TallyControl.cs",
-              "DocumentMoniker": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\TallyControl.cs",
-              "RelativeDocumentMoniker": "TallyControl.cs",
-              "ToolTip": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\TallyControl.cs*",
-              "RelativeToolTip": "TallyControl.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T23:49:37.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Messenger.cs",
-              "DocumentMoniker": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\Messenger.cs",
-              "RelativeDocumentMoniker": "Messenger.cs",
-              "ToolTip": "C:\\Users\\115al\\Documents\\GitHub\\Dynamic-Tally-Counter\\Tally Counter\\Messenger.cs",
-              "RelativeToolTip": "Messenger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKMBAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T00:42:11.555Z",
               "EditorCaption": ""
             }
           ]

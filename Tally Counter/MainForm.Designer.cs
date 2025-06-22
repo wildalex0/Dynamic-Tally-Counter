@@ -34,6 +34,7 @@
             loadToolButton = new ToolStripButton();
             addToolButton = new ToolStripButton();
             saveDataButton = new ToolStripButton();
+            clearScreenToolButton = new ToolStripButton();
             settingsToolButton = new ToolStripButton();
             folderBrowserDialog1 = new FolderBrowserDialog();
             toolStrip1.SuspendLayout();
@@ -51,7 +52,7 @@
             // 
             // toolStrip1
             // 
-            toolStrip1.Items.AddRange(new ToolStripItem[] { loadToolButton, addToolButton, saveDataButton, settingsToolButton });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { loadToolButton, addToolButton, saveDataButton, clearScreenToolButton, settingsToolButton });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.RenderMode = ToolStripRenderMode.Professional;
@@ -90,6 +91,16 @@
             saveDataButton.Text = "Save Data";
             saveDataButton.Click += saveDataButton_Click;
             // 
+            // clearScreenToolButton
+            // 
+            clearScreenToolButton.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            clearScreenToolButton.Image = (Image)resources.GetObject("clearScreenToolButton.Image");
+            clearScreenToolButton.ImageTransparentColor = Color.Magenta;
+            clearScreenToolButton.Name = "clearScreenToolButton";
+            clearScreenToolButton.Size = new Size(76, 22);
+            clearScreenToolButton.Text = "Clear Screen";
+            clearScreenToolButton.Click += clearScreenToolButton_Click;
+            // 
             // settingsToolButton
             // 
             settingsToolButton.DisplayStyle = ToolStripItemDisplayStyle.Text;
@@ -109,6 +120,8 @@
             Controls.Add(mainLayoutPanel);
             Name = "MainForm";
             Text = "Counter";
+            FormClosing += MainForm_FormClosing;
+            Load += MainForm_Load;
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             ResumeLayout(false);
@@ -124,5 +137,6 @@
         private ToolStripButton settingsToolButton;
         private FolderBrowserDialog folderBrowserDialog1;
         private ToolStripButton saveDataButton;
+        private ToolStripButton clearScreenToolButton;
     }
 }
