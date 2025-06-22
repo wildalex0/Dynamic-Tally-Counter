@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             saveChangesButton = new Button();
             label4 = new Label();
             filenameInput = new TextBox();
@@ -113,6 +114,7 @@
             Controls.Add(selectFolderButton);
             Controls.Add(filePathInput);
             Controls.Add(label3);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximumSize = new Size(268, 489);
             MinimumSize = new Size(268, 489);
             Name = "Settings";

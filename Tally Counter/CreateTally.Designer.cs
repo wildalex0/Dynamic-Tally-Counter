@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateTally));
             tallyTitleInput = new TextBox();
             label1 = new Label();
             label2 = new Label();
@@ -166,6 +167,7 @@
             Controls.Add(tallyValueInput);
             Controls.Add(label1);
             Controls.Add(tallyTitleInput);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximumSize = new Size(266, 489);
             MinimumSize = new Size(266, 489);
             Name = "CreateTally";

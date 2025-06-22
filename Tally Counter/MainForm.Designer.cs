@@ -36,6 +36,7 @@
             saveDataButton = new ToolStripButton();
             clearScreenToolButton = new ToolStripButton();
             settingsToolButton = new ToolStripButton();
+            infoToolButton = new ToolStripButton();
             folderBrowserDialog1 = new FolderBrowserDialog();
             toolStrip1.SuspendLayout();
             SuspendLayout();
@@ -52,7 +53,7 @@
             // 
             // toolStrip1
             // 
-            toolStrip1.Items.AddRange(new ToolStripItem[] { loadToolButton, addToolButton, saveDataButton, clearScreenToolButton, settingsToolButton });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { loadToolButton, addToolButton, saveDataButton, clearScreenToolButton, settingsToolButton, infoToolButton });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.RenderMode = ToolStripRenderMode.Professional;
@@ -111,6 +112,16 @@
             settingsToolButton.Text = "Settings";
             settingsToolButton.Click += settingsToolButton_Click;
             // 
+            // infoToolButton
+            // 
+            infoToolButton.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            infoToolButton.Image = (Image)resources.GetObject("infoToolButton.Image");
+            infoToolButton.ImageTransparentColor = Color.Magenta;
+            infoToolButton.Name = "infoToolButton";
+            infoToolButton.Size = new Size(32, 22);
+            infoToolButton.Text = "Info";
+            infoToolButton.Click += infoToolButton_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -118,6 +129,7 @@
             ClientSize = new Size(1376, 810);
             Controls.Add(toolStrip1);
             Controls.Add(mainLayoutPanel);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
             Text = "Counter";
             FormClosing += MainForm_FormClosing;
@@ -138,5 +150,6 @@
         private FolderBrowserDialog folderBrowserDialog1;
         private ToolStripButton saveDataButton;
         private ToolStripButton clearScreenToolButton;
+        private ToolStripButton infoToolButton;
     }
 }

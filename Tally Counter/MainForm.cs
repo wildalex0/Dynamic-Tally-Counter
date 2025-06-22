@@ -95,9 +95,10 @@ namespace Tally_Counter
                     {
                         CreateTallyControl(tally);
                     }
-                    if (!silent) {
+                    if (!silent)
+                    {
                         Messenger.MessageBox("Data Loaded Successfully", "Save Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                            }
+                    }
 
                 }
                 else
@@ -194,7 +195,8 @@ namespace Tally_Counter
         }
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (!String.Equals(getJsonString(), latestSavedData)){
+            if (!String.Equals(getJsonString(), latestSavedData))
+            {
                 if (Messenger.MessageBox("Are you sure you want to close?\nUnsaved data will be lost.", "Unsaved Data Popup", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.No)
                 {
                     e.Cancel = true;
@@ -220,7 +222,10 @@ namespace Tally_Counter
 
         }
 
-
+        private void infoToolButton_Click(object sender, EventArgs e)
+        {
+            Messenger.MessageBox("This program has been made by @wildalex0 on github.\n\nDate Created: 22/06/2025", "General Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 
 }
