@@ -128,23 +128,25 @@
             // 
             tallyPathLabel.AutoSize = true;
             tallyPathLabel.Font = new Font("Segoe UI", 8F);
-            tallyPathLabel.Location = new Point(83, 365);
+            tallyPathLabel.ImageAlign = ContentAlignment.MiddleLeft;
+            tallyPathLabel.Location = new Point(3, 367);
             tallyPathLabel.Name = "tallyPathLabel";
             tallyPathLabel.Size = new Size(51, 13);
             tallyPathLabel.TabIndex = 7;
             tallyPathLabel.Text = "tallyPath";
+            tallyPathLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tallyTitle
             // 
-            tallyTitle.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            tallyTitle.Anchor = AnchorStyles.Top;
             tallyTitle.AutoSize = true;
             tallyTitle.Font = new Font("Segoe UI", 13F);
-            tallyTitle.Location = new Point(60, 0);
+            tallyTitle.Location = new Point(67, 0);
             tallyTitle.Name = "tallyTitle";
             tallyTitle.Size = new Size(76, 25);
             tallyTitle.TabIndex = 8;
             tallyTitle.Text = "tallyTitle";
-            tallyTitle.TextAlign = ContentAlignment.TopCenter;
+            tallyTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tallyCount
             // 
@@ -155,6 +157,7 @@
             tallyCount.Size = new Size(40, 46);
             tallyCount.TabIndex = 9;
             tallyCount.Text = "0";
+            tallyCount.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // deleteCounterButton
             // 
@@ -186,6 +189,7 @@
             Margin = new Padding(10, 25, 10, 10);
             Name = "TallyControl";
             Size = new Size(214, 477);
+            Load += TallyControl_Load;
             ResumeLayout(false);
             PerformLayout();
         }

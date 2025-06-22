@@ -7,6 +7,9 @@
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="TallyControl.cs">
       <SubType>UserControl</SubType>
     </Compile>

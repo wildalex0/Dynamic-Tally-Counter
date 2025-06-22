@@ -19,6 +19,7 @@ namespace Tally_Counter
         {
             InitializeComponent();
             this.tallyObj = tallyInp;
+            updateValues();
         }
 
         public void updateValues()
@@ -121,6 +122,7 @@ namespace Tally_Counter
                     tallyObj.SavePath = folderDialog.SelectedPath;
                     //Ensures that tally creates a new file at the newly set location
                     tallyObj.saveTallyToFile();
+                    updateValues();
                 }
             }
         }
@@ -135,8 +137,13 @@ namespace Tally_Counter
                 DeleteRequested?.Invoke(this, EventArgs.Empty);
                 this.Parent.Controls.Remove(this);
                 this.Dispose();
-                
+
             }
+        }
+
+        private void TallyControl_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

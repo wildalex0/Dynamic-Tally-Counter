@@ -33,7 +33,7 @@ namespace Tally_Counter
         {
             using (var folderDialog = new FolderBrowserDialog())
             {
-                folderDialog.ShowNewFolderButton = true;
+                //folderDialog.ShowNewFolderButton = true;
 
                 if (folderDialog.ShowDialog() == DialogResult.OK)
                 {
@@ -50,9 +50,9 @@ namespace Tally_Counter
                 return false;
             }
 
-            if (!int.TryParse(tallyValueInput.Text, out int count) || count <= 0)
+            if (!int.TryParse(tallyValueInput.Text, out int count))
             {
-                Messenger.MessageBox("Tally Count must be a valid positive number.", "Validation Error", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                Messenger.MessageBox("Tally Count must be a valid number.", "Validation Error", MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 tallyValueInput.Focus();
                 return false;
             }

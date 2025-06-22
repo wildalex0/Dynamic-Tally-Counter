@@ -33,9 +33,9 @@
             toolStrip1 = new ToolStrip();
             loadToolButton = new ToolStripButton();
             addToolButton = new ToolStripButton();
+            saveDataButton = new ToolStripButton();
             settingsToolButton = new ToolStripButton();
             folderBrowserDialog1 = new FolderBrowserDialog();
-            saveDataButton = new ToolStripButton();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -80,15 +80,6 @@
             addToolButton.Text = "Add Data";
             addToolButton.Click += addToolButton_Click;
             // 
-            // settingsToolButton
-            // 
-            settingsToolButton.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            settingsToolButton.Image = (Image)resources.GetObject("settingsToolButton.Image");
-            settingsToolButton.ImageTransparentColor = Color.Magenta;
-            settingsToolButton.Name = "settingsToolButton";
-            settingsToolButton.Size = new Size(53, 22);
-            settingsToolButton.Text = "Settings";
-            // 
             // saveDataButton
             // 
             saveDataButton.DisplayStyle = ToolStripItemDisplayStyle.Text;
@@ -97,7 +88,17 @@
             saveDataButton.Name = "saveDataButton";
             saveDataButton.Size = new Size(62, 22);
             saveDataButton.Text = "Save Data";
-            saveDataButton.Click += this.saveDataButton_Click;
+            saveDataButton.Click += saveDataButton_Click;
+            // 
+            // settingsToolButton
+            // 
+            settingsToolButton.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            settingsToolButton.Image = (Image)resources.GetObject("settingsToolButton.Image");
+            settingsToolButton.ImageTransparentColor = Color.Magenta;
+            settingsToolButton.Name = "settingsToolButton";
+            settingsToolButton.Size = new Size(53, 22);
+            settingsToolButton.Text = "Settings";
+            settingsToolButton.Click += settingsToolButton_Click;
             // 
             // MainForm
             // 

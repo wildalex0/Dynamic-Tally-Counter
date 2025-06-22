@@ -17,3 +17,4 @@ C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Debug\ne
 C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Debug\net8.0-windows\Tally Counter.genruntimeconfig.cache
 C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Debug\net8.0-windows\ref\Tally Counter.dll
 C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Debug\net8.0-windows\Tally_Counter.CreateTally.resources
+C:\Users\115al\Documents\GitHub\Dynamic-Tally-Counter\Tally Counter\obj\Debug\net8.0-windows\Tally_Counter.Settings.resources
