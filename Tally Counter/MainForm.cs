@@ -11,7 +11,7 @@ namespace Tally_Counter
         private DarkModeCS dm = null;
         internal List<Tally> tallyList = new List<Tally>();
         string configPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "config.ini");
-        string dataSavePath = null;
+        public string dataSavePath = string.Empty;
         string dataFileName = null;
         string latestSavedData = string.Empty;
         public MainForm()
@@ -93,8 +93,10 @@ namespace Tally_Counter
                     }
                     foreach (Tally tally in tallyList)
                     {
+                        tally.BasePath = dataSavePath;
                         CreateTallyControl(tally);
                     }
+
                     if (!silent)
                     {
                         Messenger.MessageBox("Data Loaded Successfully", "Save Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -125,7 +127,6 @@ namespace Tally_Counter
         {
             try
             {
-                //Until implementation of settings screen, it will use a hardcoded file.
                 String jsonString = getJsonString();
                 latestSavedData = jsonString;
                 string directoryPath = Path.GetFullPath(dataSavePath);
@@ -155,13 +156,15 @@ namespace Tally_Counter
                 {
                     string title = tallyForm.TallyName;
                     int count = tallyForm.TallyCount;
-                    string path = tallyForm.TallyPath;
                     string fileName = tallyForm.Filename;
                     string fileExtension = tallyForm.FileExtension;
                     int index = tallyList.Count;
-                    Tally newTally = new Tally(title, count, path, fileName, fileExtension, index, false);
-                    CreateTallyControl(newTally);
+                    string subfolder = ""; 
+
+                    var newTally = new Tally(title, count, dataSavePath, subfolder, fileName, fileExtension, index, false);
                     tallyList.Add(newTally);
+                    CreateTallyControl(newTally);
+
                 }
             }
 

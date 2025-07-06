@@ -11,58 +11,58 @@ namespace Tally_Counter
     public class Tally
     {
         public int Count { get; set; }
-        public string SavePath { get; set; }
         public int Index { get; set; }
+        public string SaveSubfolder { get; set; } = ""; // Relative to dataSavePath
         public string Title { get; set; }
         public string Filename { get; set; }
         public string SaveExtension { get; set; }
 
+        [JsonIgnore]
+        public string BasePath { get; set; } = "";
+
+        [JsonIgnore]
+        public string FullFilePath => Path.Combine(BasePath, SaveSubfolder, Filename + SaveExtension);
+
+
         public Tally() { }
-        public Tally(string Title = "Null", int Count = 0, string path= "C:/", string fileName= "Test", string fileExtention= ".md", int index = 0, bool isLoading = false)
+
+        public Tally(string title, int count, string basePath, string subfolder, string fileName, string fileExt, int index = 0, bool isLoading = false)
         {
-            this.Title = Title;
-            this.Count = Count;
-            this.SavePath = path;
-            this.Filename = fileName;
-            this.SaveExtension = fileExtention;
-            this.Index = index;
-            if (!isLoading && !string.IsNullOrEmpty(SavePath))
-            {
+            Title = title;
+            Count = count;
+            BasePath = basePath;
+            SaveSubfolder = subfolder;
+            Filename = fileName;
+            SaveExtension = fileExt;
+            Index = index;
+
+            if (!isLoading)
                 saveTallyToFile();
-            }
         }
 
         public void incrementTally(int val)
         {
-            this.Count += (val);
-            saveTallyToFile ();
-        }
-        public void decrementTally(int val) {
-            this.Count -= (val);
+            this.Count += val;
             saveTallyToFile();
         }
+
+        public void decrementTally(int val)
+        {
+            this.Count -= val;
+            saveTallyToFile();
+        }
+
         public void saveTallyToFile()
         {
-            string fullPath = Path.Combine(this.SavePath, this.Filename+this.SaveExtension);
-            if (File.Exists(fullPath))
-            {
-                File.WriteAllText(fullPath, this.Count.ToString());
-            }
-            else
-            {
-                File.WriteAllText(fullPath, this.Count.ToString());
-            }
-
+            Directory.CreateDirectory(Path.GetDirectoryName(FullFilePath));
+            File.WriteAllText(FullFilePath, Count.ToString());
         }
 
         public void deleteTally()
         {
-            string fullPath = Path.Combine(this.SavePath, this.Filename + this.SaveExtension);
-            if (File.Exists(fullPath))
-            {
-                File.Delete(fullPath);
-            }
+            if (File.Exists(FullFilePath))
+                File.Delete(FullFilePath);
         }
-    }
+    } 
 
 }

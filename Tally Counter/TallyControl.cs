@@ -29,7 +29,7 @@ namespace Tally_Counter
         {
             updateLabel(tallyObj.Title, tallyTitle);
             updateLabel(tallyObj.Count.ToString(),tallyCount);
-            tallyPathLabel.Text = tallyObj.SavePath;
+            tallyPathLabel.Text = Path.Combine(tallyObj.BasePath, tallyObj.SaveSubfolder);
         }
 
         public void updateLabel(string newText, Label tc)
@@ -138,7 +138,7 @@ namespace Tally_Counter
 
                 if (folderDialog.ShowDialog() == DialogResult.OK)
                 {
-                    tallyObj.SavePath = folderDialog.SelectedPath;
+                    tallyObj.SaveSubfolder = folderDialog.SelectedPath;
                     //Ensures that tally creates a new file at the newly set location
                     tallyObj.saveTallyToFile();
                     updateValues();
