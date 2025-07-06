@@ -25,7 +25,7 @@
 ![image](https://github.com/user-attachments/assets/7a6c97b1-43a1-457a-ae8f-92d3cb80a1d6)
 
 ## Usage
-- Download and Unzip the file from [link](https://github.com/wildalex0/Dynamic-Tally-Counter/releases/tag/1.0.0)
+- Download and Unzip the file from [link](https://github.com/wildalex0/Dynamic-Tally-Counter/releases/tag/1.1.0)
 
 - Open the exe file named: **Tally Counter.exe**
   - Important to note that the data storing settings might need to be configured on first launch.
